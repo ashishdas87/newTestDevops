@@ -1,7 +1,13 @@
 ---
-- hosts: ALL
+- hosts: all
+  become: yes
   tasks:
   - name: want to install web server on ansible nodes
-  -apt:
-    name: apache2
-    state: present
+    apt:
+      name: apache2
+      state: present
+  
+  - name: I want to start webserver on ansible
+    service:
+       name: apache2
+       state: started
