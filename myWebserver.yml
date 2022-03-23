@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: myWebservers
   become: yes
   tasks:
   - name: want to install web server on ansible nodes
