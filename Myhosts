@@ -10,3 +10,8 @@
 172.98.32.231
 172.32.32.184
 
+
+[myWebservers:vars]
+myWebpackforUbuntu=apache2
+myWebpackforRedHat=httpd
+
