@@ -1,0 +1,15 @@
+---
+
+- hosts: 172.31.36.143
+  become: yes
+  vars:
+     var1: git
+     var2: wget
+     var3: tree
+  tasks: 
+  - name: I want to display {{var1}}
+    debug:
+      msg: {{var1}}
+  - name: I want to install {{var1}}
+    state: present
+
