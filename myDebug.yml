@@ -1,0 +1,12 @@
+---
+- hosts:
+  become: yes
+  tasks:
+  - name: I want to execute linux commands
+    command: hostname -f
+    register: myResult
+
+  - name: I want to display task myResult
+    debug:
+        msg: "{{myResult}}"
+        
