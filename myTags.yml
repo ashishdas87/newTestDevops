@@ -17,4 +17,5 @@
     apt:
       name: git
       state: present
-      tags: myGit
+    tags: mygit
+    
