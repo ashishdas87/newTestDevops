@@ -14,7 +14,7 @@
     tags: myWget
 
   - name: Install git
-    -apt:
+    apt:
       name: git
       state: present
       tags: myGit
