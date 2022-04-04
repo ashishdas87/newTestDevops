@@ -2,4 +2,4 @@
   - name: I want to create file
     file:
       path: /home/ubuntu/myTest
-      state: present
+      state: touch
