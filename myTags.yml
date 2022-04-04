@@ -10,8 +10,8 @@
   - name: Install wget
     apt:
       name: wget
-      state: present
-      tags: myWget
+      stateeeee: present
+    tags: myWget
     ignore_errors: yes
 
   - name: Install git

@@ -1,0 +1,10 @@
+---
+
+- hosts: myWebservers
+  become: yes
+  tasks:
+  - include_tasks: myFile.yml
+  - name: I want to install webserver
+    apt:
+      name: apache2
+      state: present
