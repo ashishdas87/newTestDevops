@@ -1,2 +1,15 @@
 ---
 # tasks file for myWebRole
+
+- name: install webserver
+  apt:
+    name: apache2
+    state: present
+  notify: Restart webserver
+
+- name: Copy file to nodes
+  template:
+    src: template/myIndex.j2
+    dest: /var/www/html/index.html
+  notify: Restart webserver
+
