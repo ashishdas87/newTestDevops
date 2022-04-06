@@ -4,3 +4,5 @@
 - include_tasks: createTomcatUsers.yml
 - include_tasks: installTomcat.yml
 - include_tasks: UpdatePermissions.yml
+- include_tasks: tomcatService.yml
+- include_tasks: starTomcat.yml
