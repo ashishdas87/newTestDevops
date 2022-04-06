@@ -5,4 +5,4 @@
 - include_tasks: installTomcat.yml
 - include_tasks: UpdatePermissions.yml
 - include_tasks: tomcatService.yml
-- include_tasks: starTomcat.yml
+- include_tasks: startTomcat.yml

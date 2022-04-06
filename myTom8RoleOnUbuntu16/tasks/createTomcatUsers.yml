@@ -2,7 +2,8 @@
 - name: create Tomcat group
   group:
     name: Tomcat
-    state: Present
+    state: present
+
 - name: creating tomcat create Tomcat user 
   user:
     name: tomcat
