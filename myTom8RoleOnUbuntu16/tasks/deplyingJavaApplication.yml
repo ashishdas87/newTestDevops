@@ -1,6 +1,6 @@
 --- 
-- name: Deploy java deplying Java Application
+- name: deploying Java Application
   get_url:
-    url: https://maha29march22.s3.us-west-2.amazonaws.com/mahalogin.war
-    dest: /opt/tomcat/webapps/mahalogin.war
+    url: https://ashish-awsbucket22-02.s3.eu-central-1.amazonaws.com/jenkins.war
+    dest: /opt/tomcat/webapps/jenkins.war
     force_basic_auth: yes
