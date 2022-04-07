@@ -1,13 +1,13 @@
 ---
 - name: create Tomcat group
   group:
-    name: Tomcat
+    name: tomcat
     state: present
 
 - name: create Tomcat user 
   user:
     name: tomcat
     shell: /bin/false
-    groups: tomcat
+    group: tomcat
     home: /opt/tomcat
     state: present
