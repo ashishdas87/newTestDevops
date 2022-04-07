@@ -23,26 +23,26 @@
   file:
     path: /opt/tomcat/webapps/
     recurse: yes
-    user: tomcat
+    owner: tomcat
     state: directory 
 
 - name: change ownership of webapps to tomcat user
   file:
     path: /opt/tomcat/work/
     recurse: yes
-    user: tomcat
+    owner: tomcat
     state: directory 
 
 - name: change ownership of webapps to tomcat user
   file:
     path: /opt/tomcat/temp/
     recurse: yes
-    user: tomcat
+    owner: tomcat
     state: directory 
 
 - name: change ownership of webapps to tomcat user
   file:
     path: /opt/tomcat/logs/
     recurse: yes
-    user: tomcat
+    owner: tomcat
     state: directory 
