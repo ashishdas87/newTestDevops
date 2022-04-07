@@ -4,7 +4,7 @@
     name: Tomcat
     state: present
 
-- name: creating tomcat create Tomcat user 
+- name: create Tomcat user 
   user:
     name: tomcat
     shell: /bin/false
